@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block body_block %}
-	{{ aboutmessage }}
-	<br />You have visited this page {{ visits }} times
-	<br /><img src="{% static "images/will.jpg" %}"
+	Rango says here is the about page
+	<br />{{ aboutmessage }}
+	<br />visits: {{ visits }}
+	<br /><img src="{% static "media/cat.jpg" %}"
 				alt = "picture of rango" />
 {% endblock %}

@@ -25,7 +25,7 @@ def about(request):
 		request.session.delete_test_cookie()
 	visitor_cookie_handler(request)
 	visits = request.session['visits']
-	context_dict = {'aboutmessage' : "This tutorial has been put together by Lord Awesome", "visits" : visits}
+	context_dict = {'aboutmessage' : "This tutorial has been put together by Roddy", "visits" : visits}
 	return render(request, 'rango/about.html', context=context_dict)
 	
 def show_category(request, category_name_slug):
